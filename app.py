@@ -11,10 +11,10 @@ def send_notification(message):
     pushover_token = os.getenv('PUSHOVER_TOKEN')
     pushover_url = 'https://api.pushover.net/1/messages.json'
     params = {
-        "token": pushover_token,
-        "user": "uga9w2s6wJsnGUwTjpmJnyMQnV6E5q",
-        "message": message,
-        "title": message
+        'token': pushover_token,
+        'user': 'uga9w2s6wJsnGUwTjpmJnyMQnV6E5q',
+        'message': message,
+        'title': message
     }
     requests.post(pushover_url, params=params)
 
@@ -42,17 +42,17 @@ def index():
     fp.close()
     last_distracted = details['last_distracted']
     last_mins = details['minutes']
-    today = datetime.today().strftime("%D")
+    today = datetime.today().strftime('%D')
     sent = (last_distracted == today)
     used_time = get_social_time()
     if not sent:
         if used_time > 20:
-            send_notification("Focus: {}".format(used_time))
+            send_notification('Focus: {}'.format(used_time))
             last_mins = used_time
             last_distracted = today
     else:
         if (used_time - last_mins) > 15:
-            send_notification("Focus: {}".format(used_time))
+            send_notification('Focus: {}'.format(used_time))
             last_mins = used_time
     details = {'minutes': last_mins,
                'last_distracted': last_distracted}
@@ -67,7 +67,7 @@ def index():
 def reset():
     details = {'minutes': 30, 'last_distracted': '10/02/17'}
     pickle.dump(details, open('data.pkl', 'wb'))
-    return "Done."
+    return 'Done.'
 
 if __name__ == '__main__':
     app.run()
