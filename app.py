@@ -34,9 +34,6 @@ def get_social_time():
         time = social_media[0][1] / 60
     return int(time)
 
-# Check if hourly present IFTTT
-# GitHub to appengine
-
 
 @app.route('/')
 def index():
