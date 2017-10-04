@@ -13,6 +13,7 @@ def send_notification(message):
     params = {
         'token': pushover_token,
         'user': 'uga9w2s6wJsnGUwTjpmJnyMQnV6E5q',
+        'priority': -2,
         'message': message,
         'title': message
     }
