@@ -9,6 +9,10 @@ Vibrate your fitness band when you're distracted on social media.
 3. Notifications for pushover are turned on through official app of fitness tracker.
 4. The process check every 15 mins from the time first you're distracted and repeats 1-2-3.
 
+## Dependencies
+- [Rescuetime](https://www.rescuetime.com) extension installed in browser
+- [Pushover](http://pushover.net) app on your smartphone.
+
 ## Installation
 1. Fork and clone the repo
     ```
