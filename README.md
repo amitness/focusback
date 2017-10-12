@@ -9,6 +9,33 @@ Vibrate your fitness band when you're distracted on social media.
 3. Notifications for pushover are turned on through official app of fitness tracker.
 4. The process check every 15 mins from the time first you're distracted and repeats 1-2-3.
 
+## Installation
+1. Fork and clone the repo
+    ```
+    git clone https://github.com/yourgithubusername/focusback
+    ```
+2. Create a heroku app.
+    ```
+    heroku create appname
+    ```
+3. Set environment variable with your pushover and rescuetime API key.
+    ```
+     heroku config:set PUSHOVER_TOKEN='XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX'
+     heroku config:set RESCUETIME_TOKEN='XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX'
+    ``` 
+
+4. Push the app
+    ```
+    git push heroku master
+    ```
+ 
+5. On [IFTTT](http://ifttt.com/), [create](https://ifttt.com/create) a new applet. 
+    - On THIS, select datetime > 'Every Hour'
+    - On THAT, select Webhooks > `Make a web request`
+    - Set URL to your heroku app URL
+    - Set METHOD to GET
+    - Hit Create Action
+
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details
