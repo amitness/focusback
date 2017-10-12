@@ -9,3 +9,6 @@ Vibrate your fitness band when you're distracted on social media.
 3. Notifications for pushover are turned on through official app of fitness tracker.
 4. The process check every 15 mins from the time first distracted and repeats 1-2-3.
 
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details
