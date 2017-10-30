@@ -8,6 +8,7 @@ app = Flask(__name__)
 
 
 def send_notification(message):
+    """Send push notification"""
     pushover_token = os.getenv('PUSHOVER_TOKEN')
     pushover_url = 'https://api.pushover.net/1/messages.json'
     params = {
