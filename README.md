@@ -33,7 +33,7 @@ Vibrate your fitness band when you're distracted on social media.
     git push heroku master
     ```
  
-5. On [IFTTT](http://ifttt.com/), [create](https://ifttt.com/create) a new applet. 
+5. On [IFTTT](http://ifttt.com/), create a [new applet](https://ifttt.com/create). 
     - On `THIS`, select `datetime` > 'Every Hour'
     - On `THAT`, select `Webhooks` > `Make a web request`
     - Set `URL` to your heroku app URL
