@@ -34,11 +34,11 @@ Vibrate your fitness band when you're distracted on social media.
     ```
  
 5. On [IFTTT](http://ifttt.com/), [create](https://ifttt.com/create) a new applet. 
-    - On THIS, select datetime > 'Every Hour'
-    - On THAT, select Webhooks > `Make a web request`
-    - Set URL to your heroku app URL
-    - Set METHOD to GET
-    - Hit Create Action
+    - On `THIS`, select `datetime` > 'Every Hour'
+    - On `THAT`, select `Webhooks` > `Make a web request`
+    - Set `URL` to your heroku app URL
+    - Set `METHOD` to `GET`
+    - Hit `Create Action`
 
 ## License
 
